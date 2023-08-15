@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div class="main">
+                <a class="back" href="">
+                    <img src="./assets/img/стрелка.png" alt="">
+                </a>
+                <h1 class="investigation-type">6.2. Исследование следов орудий, инструментов, механизмов, транспортных
+                    средств
+                    (транспортно-трассологическая идентификация)</h1>
+                <div class="wrap">
+                    <div class="certification-card">
+                        <img class="img_certificate" src="./assets/img/Сертификат для платформы 1.png" alt="">
+                        <div class="certification-section">
+                            <div class="star">
+                                <img src="./assets/img/Group 7.png" alt="">
+                                <span class="registration-number">регистрационный № РОСС.RU.Я2431.04/ЕДУ0.
+                                    от 15.05.21</span>
+                            </div>
+                            <span class="certification-system">Система добровольной сертификации негосударственных
+                                судебных экспертов EDUPARTNER,
+                                зарегистрирована в едином реестре Федерального агентства по техническому регулированию
+                                и метрологии (Росстандарт)</span>
+                            <span class="certificate-expiry">*Срок действия сертификата 3 года</span>
+                            <div class="price-btn">
+                                <span class="price">2 990 Р</span>
+                                <a class="cart-action-button btn" href="">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-description">
+                        <div class="research-details research-details-grad isActive">
+                            <h1 class="research-title">Описание</h1>
+                            <ul class="research-list">
+                                <li>Объекты исследования:</li>
+                                <li>единичные текстильные волокна;</li>
+                                <li>нити, пряжа, швейные нитки, ткани, трикотаж;</li>
+                                <li>изделия из тканей и трикотажа — одежда, предметы бытового назначения (постельное
+                                    белье, ковры, скатерти и др.), их фрагменты;</li>
+                                <li>шнуры, верёвки, другие кручёные, вязаные и плетёные изделия, их фрагменты;</li>
+                                <li>Задачи исследования:</li>
+                                <li>установление волокнистого состава текстильных изделий;</li>
+                                <li>установление родовой и общей родовой (групповой) принадлежности микрочастиц
+                                    текстильных волокон, частей нитей, тканей, трикотажа и других объектов
+                                    волокнистой
+                                    природы;</li>
+                                <li>установление факта контактного взаимодействия комплектов одежды по следам
+                                    (микроследам) текстильных волокон и загрязнений на одежде;</li>
+                                <li>установление факта контактного взаимодействия комплекта одежды с орудием (нож и
+                                    др.)
+                                    или транспортным средством по микроследам текстильных волокон в совокупности с
+                                    другими микроследами (смазка, частицы ЛКП);</li>
+                                <li>установление целого (конкретный кусок ткани, предмет одежды) по его частям
+                                    (фрагмент
+                                    ткани, пуговица с нитками), комплекта одежды по отдельным предметам
+                                    (принадлежность
+                                    пояса куртке);</li>
+                                <li>установление общего источника происхождения объектов;</li>
+                                <li>установление характера (механическое, термическое, химическое) повреждения
+                                    текстильного материала, изделия;</li>
+                                <li>установление первоначального вида и целевого назначения предметов одежды или
+                                    иных
+                                    объектов волокнистой природы по их остаткам от сожжения.</li>
+                            </ul>
+                        </div>
+                        <button class="more-details-btn btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script>
+        const researchDetails = document.querySelector(".research-details");
+        const moreDetailsBtn = document.querySelector(".more-details-btn");
+        let isActive = false;
+        moreDetailsBtn.addEventListener('click', (event) => {
+            isActive = !isActive;
+            moreDetailsBtn.textContent = !isActive ? 'Подробнее' : 'Скрыть';
+            researchDetails.classList.toggle("research-details-grad");
+            researchDetails.classList.toggle("isActive");
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("./assets/font/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./assets/font/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "MontserratBold";
+    src: url("./assets/font/Montserrat/Montserrat-Bold.ttf");
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background: #EDF2F4;
+    padding-top: 83px;
+    font-family: "Montserrat";
+}
+
+.container {
+    max-width: 1470px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.registration-number,
+.certification-system,
+.research-list,
+.more-details-btn,
+.cart-action-button {
+    font-size: 18px;
+}
+
+.research-title {
+    font-size: 20px;
+}
+
+
+/*  */
+.back {
+    margin-bottom: 30px;
+    display: block;
+}
+.back img {
+    width: 50px;
+    height: 23px;
+}
+
+.investigation-type {
+    color: rgba(0, 0, 0, 0.90);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    max-width: 953px;
+    margin-bottom: 50px;
+    font-family: "MontserratBold";
+}
+
+.registration-number {
+    font-weight: 600;
+}
+
+.btn {
+    padding: 11px 28px;
+    font-weight: 700;
+}
+
+.price-btn {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.cart-action-button {
+    border-radius: 10px;
+    background: #FAFF00;
+    white-space: nowrap;
+}
+
+.img_certificate {
+    width: 358px;
+    height: 506px;
+    border-radius: 30px;
+}
+
+.wrap {
+    display: flex;
+}
+
+.certification-card {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.certification-section {
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+    margin: 0 58px 0 19px;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.star img {
+    border-radius: 20px;
+    margin-right: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+/* описание */
+.research-description {
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+    padding: 25px 40px;
+    border-radius: 30px;
+    height: fit-content;
+    margin-bottom: 50px;
+}
+
+.research-details h1 {
+    margin-bottom: 15px;
+    font-family: "MontserratBold";
+}
+
+.research-list {
+    font-family: "Lato";
+}
+
+.research-details li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.research-details {
+    position: relative;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    max-height: 999px;
+}
+
+.isActive {
+    max-height: 360px;
+    overflow: hidden;
+}
+
+.research-details-grad::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #d8d8d8b3;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background: linear-gradient(#ffffff00, white);
+}
+
+.more-details-btn {
+    border-radius: 10px;
+    background: #dadada;
+    cursor: pointer;
+    border: none;
+    float: right;
+    transition: .3s ease;
+    margin-top: 15px;
+    font-family: "Montserrat";
+}
+
+.more-details-btn:hover {
+    background: black;
+    color: white;
+}
+
+.certificate-expiry {
+    margin: 40px 0 20px 0;
+    color: rgba(100, 100, 100, 0.70);
+}
+
+/* mobile version */
+
+@media (max-width:1300px) {
+    .wrap {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width:768px) {
+    .research-title {
+        font-size: 18px;
+    }
+
+    .more-details-btn,
+    .cart-action-button,
+    .registration-number,
+    .certification-system,
+    .certificate-expiry,
+    .cart-action-button,
+    .more-details-btn,
+    .research-list li {
+        font-size: 16px;
+    }
+
+    .star img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .certification-section {
+        width: auto;
+        margin: 0;
+    }
+
+    .star {
+        margin-bottom: 40px;
+    }
+
+    .certificate-expiry {
+        margin: 40px 0 20px 0
+    }
+
+    .img_certificate {
+        display: none;
+    }
+
+    .investigation-type {
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+
+    .price-btn {
+        gap: 20px;
+    }
+}
+
+@media (max-width:480px) {
+
+    .investigation-type,
+    .price {
+        font-size: 20px;
+    }
+
+    .research-title {
+        font-size: 16px;
+    }
+
+    .more-details-btn,
+    .cart-action-button,
+    .registration-number,
+    .certification-system,
+    .certificate-expiry,
+    .cart-action-button,
+    .more-details-btn,
+    .research-list li {
+        font-size: 14px;
+    }
+}
